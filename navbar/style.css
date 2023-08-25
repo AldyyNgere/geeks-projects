@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: #1d4ed8;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'DM Sans', sans-serif;
+}
+
+nav{
+    background-color:#020617;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    padding: 0 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.logo{
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.6rem;
+    letter-spacing: -0.1rem;
+}
+
+.logo span{
+    color: #1d4ed8;    
+}
+
+.navbar-menu{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navbar-menu li{
+    background-color: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.navbar-menu li:hover{
+    background-color: #1d4ed8;
+    transition: .2s ease;
+}
+
+.navbar-menu li a{
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.navbar-btns-box{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.navbar-btns-box button{
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    background: none;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.navbar-btns-box button i{
+    color: #fff;
+    background-color: #1d4ed8;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.navbar-btns-box button i:hover{
+    background-color: #1e3a8a;
+    transition: .2s ease;
+}
+
+#mobile-btn .ph-x{
+    display: none;
+}
+
+/* MEDIA QUERY  */
+@media only screen and (max-width: 764px){
+    .navbar-btns-box{
+        display: inline-block;
+    }
+    
+    .navbar-menu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 30rem;
+        height: 100vh;
+        background-color: #020617;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 3rem;
+        transition: .5s ease;
+    }
+    
+    #mobile-btn.sidebar-active .ph-x{
+        display: inline-block;
+    }
+
+    #mobile-btn.sidebar-active .ph-list{
+        display: none;
+    }
+    
+    .navbar-menu.sidebar-active{
+        right: 0;
+    }
+}
+
