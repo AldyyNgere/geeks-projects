@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@701,500,601,600,401,501,400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form-container">
+        <h1 class="heading">
+          Login Form <br />
+          <span>Design</span>
+        </h1>
+        <p class="caps">Please login to your account first</p>
+        <form name="login-form">
+          <div class="input-box">
+            <input type="text" name="username" placeholder="your username" />
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              name="password"
+              placeholder="your password"
+            />
+          </div>
+          <div class="input-box remember-box">
+            <input type="checkbox" name="remember" />
+            <label for="remember">Remember me</label>
+          </div>
+          <div class="input-box">
+            <input type="button" value="login" />
+          </div>
+        </form>
+        <div class="sm-box">
+          <p class="caps">or login with</p>
+          <div class="icons">
+            <i class="ph ph-facebook-logo"></i>
+            <i class="ph ph-google-logo"></i>
+            <i class="ph ph-github-logo"></i>
+          </div>
+        </div>
+      </div>
+      <div class="img-container"></div>
+    </div>
+    <!-- scripts  -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- scripts  end -->
+  </body>
+</html>
