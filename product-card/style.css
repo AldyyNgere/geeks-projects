@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: #020617;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 8rem;
+    background-color: #f8f9fa;    
+}
+
+.container{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.card{
+    background-color: #fff;
+    text-align: center;
+    padding: 6rem 3rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: .3s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.product-type{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.product-caps{
+    margin-bottom: 2.5rem;
+}
+
+.price-box{
+    display: flex;
+    flex-direction: column;
+    gap: - 3rem;
+    margin-bottom: 2rem;
+}
+
+.product-price{
+    font-size: 5.2rem;
+    font-weight: 700;
+    margin-bottom: -0.8rem;
+}
+
+.product-price-caps{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.product-text{
+    margin-bottom: 3rem;
+    line-height: 1.75;
+}
+
+.product-btn{
+    padding: 1.4rem 3.2rem;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .2s ease;
+}
+
+.card .product-btn:not(.card:nth-child(2) .product-btn){
+    background-color: #2563eb;
+    color: #fff;
+}
+
+.card:nth-child(2){
+    background-color: #2563eb;
+    color: #fff;
+}
+
+.card:nth-child(2) .product-btn{
+    background-color: #fff;
+    color: #020617;
+}
+
+.card:nth-child(2) .product-btn:hover{
+    background-color: #bfdbfe;
+}
+
+.card .product-btn:hover:not(.card:nth-child(2) .product-btn){
+    background-color: #1e40af;
+    color: #fff;
+}
