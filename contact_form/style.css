@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    background-color: #0f172a;
+}
+
+.wrapper{
+    background-color: #020617;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 0.8rem;
+}
+
+.contact-box{
+    padding: 4rem 5rem;
+}
+
+form[name="contact-form"] .textarea-box{
+    margin-bottom: 1.5rem;
+}
+
+form[name="contact-form"] .textarea-box textarea{
+    border-radius: 0.3rem;
+    padding: 1rem;
+    font-family: inherit;
+    background-color: #020617;
+    border: solid 1px #1d4ed8;
+    color: #1d4ed8;
+}
+
+form[name="contact-form"] .input-box{
+    margin-bottom: 2.5rem;
+    display: grid;
+}
+
+form[name="contact-form"] .input-box input{
+    height: 3.3rem;
+    border-radius: 0.3rem;
+    padding: 0 1rem;
+    font-family: inherit;
+    background-color: #020617;
+    border: solid 1px #1d4ed8;
+    color: #1d4ed8;
+}
+
+form[name="contact-form"] .btn-box{
+    display: grid;
+}
+
+form[name="contact-form"] .btn-box input{
+    height: 3.8rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: .2s ease;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    background-color: #1d4ed8;
+    color: #dbeafe;
+}
+
+form[name="contact-form"] .btn-box input:hover{
+    background-color: #1e3a8a;
+}
+
+.img-box{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://plus.unsplash.com/premium_photo-1683740128746-176cff24b9a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y291cGxlfGVufDB8MXwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-position: center;
+}
+
+::placeholder{
+    color: #1d4ed8;
+    font-size: 1.4rem;
+}

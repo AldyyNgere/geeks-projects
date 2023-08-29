@@ -5,8 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="wrapper">
+      <div class="img-box"></div>
+      <div class="contact-box">
+        <form name="contact-form">
+          <div class="input-box">
+            <input type="text" name="fullname" placeholder="Your FullName" />
+          </div>
+          <div class="input-box">
+            <input type="email" name="email" placeholder="Your Email" />
+          </div>
+          <div class="textarea-box">
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <div class="btn-box">
+            <input type="button" value="send message" name="send-btn" />
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
