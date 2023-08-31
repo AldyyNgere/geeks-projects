@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: #f8fafc;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    padding-top: 15rem;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #020617;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #1d4ed8;
+    padding: 5rem 7rem;
+    border-radius: 3rem;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-box{
+    display: flex;
+    gap: 7rem;
+}
+
+.team{
+    text-align: center;
+}
+
+.team-name{
+    color: #020617;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.team-role{
+    /* font-size: 1.4rem; */
+}
+
+.img-box{
+    width: 12rem;
+    height: 12rem;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-bottom: 2rem;
+}
+
+.img-box img:hover{
+    cursor: pointer;
+    transition: .2s ease;
+    transform: scale(1.1);
+}
